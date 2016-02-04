@@ -4,7 +4,7 @@
 
 The goal of this assignment is to practice using existing, working code within a Ruby Web framework.
 
-You'll begin by adding a working version of String Segmenter to this application. See **lib/README.md** for details.
+You'll begin by adding a working version of String Segmenter to this application. See [lib/README.md](./lib/README.md) for details.
 
 The **Assignment Details** section below goes into more detail about what this application might look like when it's completed.
 
