@@ -1,3 +1,5 @@
+require_relative '../lib/string_segmenter'
+require 'pry'
 # The path being defined for this controller action is just "/", meaning 
 # the root path. It's the homepage.
 MyApp.get "/" do
@@ -9,3 +11,10 @@ MyApp.get "/" do
   # combined document back to the client.
   erb :"main/welcome"
 end
+
+MyApp.get "/:str" do
+  str = params[:str]
+  @x = StrSegmenter.new.segment_string(str)
+  erb :"main/segmented"
+end
+
