@@ -12,9 +12,17 @@ MyApp.get "/" do
   erb :"main/welcome"
 end
 
+MyApp.get '/newstring' do
+  # binding.pry
+  redirect to('/' + params[:input])
+end
+
 MyApp.get "/:str" do
   str = params[:str]
+  # binding.pry
   @x = StrSegmenter.new.segment_string(str)
   erb :"main/segmented"
 end
+
+
 
